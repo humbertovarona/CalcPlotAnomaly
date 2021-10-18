@@ -24,20 +24,32 @@ The grids can be 3D, depending on Lon, Lat, and Time or 4D, depending on Lon, La
 # Functions for plotting anomalies
 
 plotTSAnom
+
 plotPointsTSAnom
+
 plotAreaTSAnom
+
 plotStairsTSAnom
+
 plotBinaryTSAnom
+
 plotBinaryBarTSAnom
+
 
 # Functions for plotting anomalies at a location
 
 plotTSAnomAtLocation
+
 plotPointsTSAnomAtLocation
+
 plotAreaTSAnomAtLocation
+
 plotStairsTSAnomAtLocation
+
 plotBinaryTSAnomAtLocation
+
 plotBinaryBarTSAnomAtLocation
+
 
 lons = [-38.5, -38, -37.5, -37, -36.5, -36, -35.5];
 
@@ -72,11 +84,11 @@ end
 
 createtimeserie_NC('testTSAnomaly.nc', timeRange, 'days since 1900-01-01')
 
-inserttimeserie_NC('testTSAnomaly.nc', TSTEMP, 'ts_TEMP', 'tsTemp', 'Fake temperature (Time serie)', 'Â°C')
+inserttimeserie_NC('testTSAnomaly.nc', TSTEMP, 'ts_TEMP', 'tsTemp', 'Fake temperature (Time serie)', '°C')
 
 TSAnomaly = CalcTSAnomaly(TSTEMP);
 
-inserttimeserie_NC('testTSAnomaly.nc', TSAnomaly, 'ts_TEMP_anom', 'tsTemp', 'Fake temperature (Anomaly)', 'Â°C')
+inserttimeserie_NC('testTSAnomaly.nc', TSAnomaly, 'ts_TEMP_anom', 'tsTemp', 'Fake temperature (Anomaly)', '°C')
 
 
 figAnom = plotTSAnom(timeRange, TSAnomaly, 'Fake-temperature anomaly (\circC)');
@@ -132,11 +144,11 @@ create_NC_2DCoordinates('Matrix_Anomaly.nc', LONS, LATS);
 
 inserttime_NC('Matrix_Anomaly.nc', timeRange, 'days since 1900-01-01');
 
-insertdynamicvariable4D_NC('Matrix_Anomaly.nc', TEMPERATURE, 'temp', 'temperature', 'temperature at 3 m depth', 'Â°C', NaN);
+insertdynamicvariable4D_NC('Matrix_Anomaly.nc', TEMPERATURE, 'temp', 'temperature', 'temperature at 3 m depth', '°C', NaN);
 
 MTXAnomaly = calcMatrixAnomaly(TEMPERATURE(:,:,3,:));
 
-insertdynamicvariable3D_NC('Matrix_Anomaly.nc', MTXAnomaly, 'temp_anom', 'temperature anomaly', 'temperature anomaly at 3m depth', 'Â°C', NaN);
+insertdynamicvariable3D_NC('Matrix_Anomaly.nc', MTXAnomaly, 'temp_anom', 'temperature anomaly', 'temperature anomaly at 3m depth', '°C', NaN);
 
 
 
