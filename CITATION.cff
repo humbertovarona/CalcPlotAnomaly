@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Varona"
+  given-names: "Humberto L."
+  orcid: "https://orcid.org/0000-0001-7405-4827"
+title: "CalcPlotAnomaly: Matlab function set for the calculation and plotting of anomalies"
+version: 1.01
+doi: 10.5281/zenodo.5576889
+date-released: 2021-10-18
+url: "https://doi.org/10.5281/zenodo.5576889"
