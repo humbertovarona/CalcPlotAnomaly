@@ -1,6 +1,6 @@
 # CalcPlotAnomaly: Matlab function set for the calculation and plotting of anomalies
 
-
+[![DOI](https://zenodo.org/badge/418706594.svg)](https://zenodo.org/badge/latestdoi/418706594)
 
 # Functions for the calculation of anomalies of complete time series, specifying the month and the season.
 
