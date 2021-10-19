@@ -144,7 +144,7 @@ create_NC_2DCoordinates('Matrix_Anomaly.nc', LONS, LATS);
 
 inserttime_NC('Matrix_Anomaly.nc', timeRange, 'days since 1900-01-01');
 
-insertdynamicvariable4D_NC('Matrix_Anomaly.nc', TEMPERATURE, 'temp', 'temperature', 'temperature at 3 m depth', '°C', NaN);
+insertdynamicvariable4D_NC('Matrix_Anomaly.nc', TEMPERATURE, 'temp', 'temperature', 'temperature', '°C', NaN);
 
 MTXAnomaly = calcMatrixAnomaly(TEMPERATURE(:,:,3,:));
 
