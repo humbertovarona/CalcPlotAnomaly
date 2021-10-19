@@ -50,6 +50,7 @@ plotBinaryTSAnomAtLocation
 
 plotBinaryBarTSAnomAtLocation
 
+# Examples
 
 lons = [-38.5, -38, -37.5, -37, -36.5, -36, -35.5];
 
